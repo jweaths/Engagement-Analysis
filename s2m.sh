@@ -18,8 +18,10 @@ STORY_DURATION=60
 tell_story() {
     # Command to make Pepper tell the first story here
     qicli call ALTextToSpeech.say "\\VCT=50\\ 
-Once-upon-a-time-in-a-world-not-too -different from ours, lived Robbie, 
-a robot with a peculiar problem. Unlike his precise peers, Robbie had two left feet, figuratively speaking, making him the most clumsy robot in town. One sunny day, Robbie decided to bake a cake, a task that should have been simple. As he danced around the kitchen, mixing ingredients with a flourish only he could manage, things took a hilarious turn. With a twirl too many, he accidentally launched the flour bag into the ceiling fan, turning his kitchen into a winter wonderland. Robbie, covered in flour from head to toe, could only laugh at his snowy mishap. He realized then, maybe he wasn't cut out for baking, or twirling, but he definitely had a knack for making the best snow angels indoors. And so, Robbie's misadventure left everyone chuckling, reminding them that sometimes, it's our quirks that make the best stories. Who knew robots could be so... human?"
+In a quiet little town, lived Penelope, a penguin with a grand culinary ambition. Unlike her friends, who were content with fish, Penelope dreamed of creating the perfect pizza.
+On her big day, Penelope set out to assemble her masterpiece. But in her excitement, she confused the tomato sauce with strawberry jam. As she slid the pizza into the oven, she hummed a tune, oblivious to the sweet mistake. 
+When the timer dinged, Penelope, with a flourish, presented her creation to her friends. One bite, and there was a pause, then an eruption of laughter. Strawberry pizza was, surprisingly, not the worst thing they'd ever tasted.
+Penelope's pizza adventure became the talk of the town, proving that sometimes, the best discoveries are accidents. And maybe, just maybe, penguins could be gourmet chefs after all."
 
 }
 
