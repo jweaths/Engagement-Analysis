@@ -42,7 +42,7 @@ order = int(sys.argv[1])
 # print(sys.argv)
 
 if order == 0: # story 2 monotone
-    tts.say(''' \\state=neutral\\ \\VCT=60\\ \\vol=60\\ \\emph=0\\ \\wait=1\\ In  \\emph=0\\ \\wait=1\\ a \\emph=0\\ \\wait=1\\ quiet \\emph=0\\ \\wait=1\\ little town, lived Penelope, 
+    tts.say(''' \\style=neutral\\ \\VCT=60\\ \\vol=60\\ \\emph=0\\ \\wait=1\\ In  \\emph=0\\ \\wait=1\\ a \\emph=0\\ \\wait=1\\ quiet \\emph=0\\ \\wait=1\\ little town, lived Penelope, 
             a \\emph=0\\ \\wait=1\\ penguin \\emph=0\\ \\wait=1\\ with \\emph=0\\ \\wait=1\\ a  \\emph=0\\ \\wait=1\\grand \\emph=0\\ \\wait=1\\ culinary  \\emph=0\\ \\wait=1\\ ambition. \pau=350\ 
             Unlike \\emph=0\\ \\wait=1\\ her \\emph=0\\ \\wait=1\\ friends \\emph=0\\ \\wait=1\\, who \\emph=0\\ \\wait=1\\ were  \\emph=0\\ \\wait=1\\content \\emph=0\\ \\wait=1\\ with fish, 
             Penelope \\emph=0\\ \\wait=1\\ dreamed \\emph=0\\ \\wait=1\\ of \\emph=0\\ \\wait=1\\ creating \\emph=0\\ \\wait=1\\ the \\emph=0\\ \\wait=1\\ perfect \\emph=0\\ \\wait=1\\ pizza. \pau=350\ 
