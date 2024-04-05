@@ -4,6 +4,9 @@ import time
 import cv2
 import numpy as np
 
+order = int(sys.argv[1])
+url = sys.argv[2]
+
 class Authenticator:
 
     def __init__(self, username, password):
@@ -28,7 +31,7 @@ class AuthenticatorFactory:
         return Authenticator(self.username, self.password)
 
 # Connect to the robot fails at app.start() => RuntimeError: disconnected
-app = qi.Application(sys.argv, url="tcps://10.0.0.17:9503")
+app = qi.Application(sys.argv, url=url)
 logins = ("nao", "nao")
 factory = AuthenticatorFactory(*logins)
 app.session.setClientAuthenticatorFactory(factory)
@@ -36,9 +39,6 @@ app.start()
 print("started")
 
 tts = app.session.service("ALAnimatedSpeech")
-
-# order = int(input())
-order = int(sys.argv[1])
 
 if order == 0:
     tts.say("Hello")

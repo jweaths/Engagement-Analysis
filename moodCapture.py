@@ -4,6 +4,8 @@ import time
 import pandas as pd
 import numpy as np
 
+
+url = sys.argv[1]
 class Authenticator:
 
     def __init__(self, username, password):
@@ -28,7 +30,7 @@ class AuthenticatorFactory:
         return Authenticator(self.username, self.password)
 
 # Connect to the robot fails at app.start() => RuntimeError: disconnected
-app = qi.Application(sys.argv, url="tcps://10.0.0.17:9503")
+app = qi.Application(sys.argv, url=url)
 logins = ("nao", "nao")
 factory = AuthenticatorFactory(*logins)
 app.session.setClientAuthenticatorFactory(factory)
@@ -47,7 +49,7 @@ print("started")
 
 # Get the service ALVideoDevice.
 ALMood = app.session.service("ALMood")
-duration = 10  # seconds
+duration = 5  # seconds
 
 mood_df = pd.DataFrame(columns = ['Timestamp', 'MoodValue'])
 rows = []
