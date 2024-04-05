@@ -49,7 +49,7 @@ print("started")
 
 # Get the service ALVideoDevice.
 ALMood = app.session.service("ALMood")
-duration = 5  # seconds
+duration = 65  # seconds
 
 mood_df = pd.DataFrame(columns = ['Timestamp', 'MoodValue'])
 rows = []

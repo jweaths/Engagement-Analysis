@@ -45,7 +45,7 @@ order = int(sys.argv[1])
 # print(sys.argv)
 
 if order == 0: # story 2 monotone
-    tts.say('''qicli call ALAnimatedSpeech.say \\VCT=60\\ \\vol=60\\ \\emph=0\\ In  \\emph=0\\ a \\emph=0\\ quiet \\emph=0\\ little town, lived Penelope, 
+    tts.say('''\\VCT=60\\ \\vol=60\\ \\emph=0\\ In  \\emph=0\\ a \\emph=0\\ quiet \\emph=0\\ little town, lived Penelope, 
             a \\emph=0\\ penguin \\emph=0\\ with \\emph=0\\ a  \\emph=0\\grand \\emph=0\\ culinary  \\emph=0\\ ambition. \pau=350\ 
             Unlike \\emph=0\\ her \\emph=0\\ friends \\emph=0\\, who \\emph=0\\ were  \\emph=0\\content \\emph=0\\ with fish, 
             Penelope \\emph=0\\ dreamed \\emph=0\\ of \\emph=0\\ creating \\emph=0\\ the \\emph=0\\ perfect \\emph=0\\ pizza. \pau=350\ 

@@ -4,6 +4,10 @@ import time
 import cv2
 import numpy as np
 
+order = int(sys.argv[1])
+url = sys.argv[2]
+
+
 class Authenticator:
 
     def __init__(self, username, password):
@@ -28,7 +32,7 @@ class AuthenticatorFactory:
         return Authenticator(self.username, self.password)
 
 # Connect to the robot fails at app.start() => RuntimeError: disconnected
-app = qi.Application(sys.argv, url="tcps://10.0.0.17:9503")
+app = qi.Application(sys.argv, url=url)
 logins = ("nao", "nao")
 factory = AuthenticatorFactory(*logins)
 app.session.setClientAuthenticatorFactory(factory)
@@ -38,7 +42,7 @@ print("started")
 tts = app.session.service("ALAnimatedSpeech")
 
 # order = int(input())
-order = int(sys.argv[1])
+# order = int(sys.argv[1])
 
 if order == 0:          # story 1 animated
     tts.say('''\\VCT=80\\ \\style=joyful\\ Once upon a time, in a world not too different from ours,
@@ -52,4 +56,8 @@ if order == 0:          # story 1 animated
     reminding them that sometimes, it's our quirks that make the best stories. Who knew robots could be so... human?''')
 
 elif order == 1:        # story 2 animated
-    tts.say("Hello,")
+    tts.say(""" \\VCT=80\\ \\style=joyful\\ In a quiet little town, lived Penelope, a penguin with a grand culinary ambition. Unlike her friends, who were content with fish, Penelope dreamed of creating the perfect pizza.
+On her big day, Penelope set out to assemble her masterpiece. But in her excitement, she confused the tomato sauce with strawberry jam. As she slid the pizza into the oven, she hummed a tune, oblivious to the sweet mistake. 
+When the timer dinged, Penelope, with a flourish, presented her creation to her friends. One bite, and there was a pause, then an eruption of laughter. Strawberry pizza was, surprisingly, not the worst thing they'd ever tasted.
+Penelope's pizza adventure became the talk of the town, proving that sometimes, the best discoveries are accidents. And maybe, just maybe, penguins could be gourmet chefs after all.
+""")
