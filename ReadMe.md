@@ -1,4 +1,4 @@
-# Tales From a Tin Heart: A Human Robot Interaction Experiment
+# Tales From a Tin Heart: A Human-Robot Interaction Experiment
 
 ## Description
 
@@ -16,34 +16,6 @@ pip install -r requirements.txt
 
 For the Qi library, please follow the instructions on the Qi PyPI page.
 https://pypi.org/project/qi/
-
-
-# Directory Structure
-
-The directory structure of the project is as follows:
-
-/
-├── mood_datas
-│   └── ... (contains mood data files)
-├── scripts
-│   ├── AnimatedSpeech.py
-│   ├── moodCapture.py
-│   ├── run0.sh
-│   ├── run1.sh
-│   ├── run2.sh
-│   ├── run3.sh
-│   ├── TextToSpeech.py
-│   └── video.py
-│   
-├── video_data
-│   └── ... (contains video data files)
-├── experiment_steps.docx (documentation of experiment steps)
-├── Proposal_2.pdf  (Second draft of proposal approved by Dr. Lim in-person)
-├── survey_data.csv (Survey Data)
-├── consent_forms.pdf (Signed Consent Forms from Participants)
-├── mood_data_analysis.ipynb (Jupyter notebook for mood data analysis)
-├── README.md (this file)
-└── requirements.txt (list of required Python packages)
 
 
 ## Running
