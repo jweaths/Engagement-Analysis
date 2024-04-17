@@ -1,0 +1,8 @@
+opencv-python==4.5.3.56
+numpy==1.21.2
+pandas
+wordcloud
+scipy
+jupyter notebook
+# to install qi package, you must run on ubuntu 20.04.6 and follow instructions
+# here to build: https://pypi.org/project/qi/
