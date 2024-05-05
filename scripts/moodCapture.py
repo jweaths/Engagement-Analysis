@@ -4,7 +4,6 @@ import time
 import pandas as pd
 import numpy as np
 
-
 url = sys.argv[1]
 class Authenticator:
 
@@ -13,7 +12,7 @@ class Authenticator:
         self.password = password
 
     # This method is required by libqi and should return a dictionary with login information.
-    # The dictionary should have the keys 'user' and 'token'.
+    # The dictionary should have thels keys 'user' and 'token'.
     def initialAuthData(self):
         return {'user': self.username, 'token': self.password}
 
@@ -37,18 +36,6 @@ app.session.setClientAuthenticatorFactory(factory)
 app.start()
 print("started")
 
-
-# session = qi.Session()
-# logins = ("nao", "OMITTED")
-# factory = AuthenticatorFactory(*logins)
-# session.setClientAuthenticatorFactory(factory)
-# session.connect("tcp://192.168.1.59:9503")
-
-# The following code uses the ALTextToSpeech service to say "video session started".
-# Uncomment the following line if you want to enable this functionality.
-
-# tts = app.session.service("ALTextToSpeech")
-# tts.say("video session started")
 
 # Get the service ALVideoDevice.
 ALMood = app.session.service("ALMood")

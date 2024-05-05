@@ -2,7 +2,7 @@
 
 ## Description
 
-This project uses several Python libraries to connect to Pepper 2.9 and execute AL commands from LibQi. The main libraries used are OpenCV, Numpy, Pandas, and Wordcloud. We utlize ALMood, ALVideoDevice, ALTextToSpeech, and ALAnimatedSpeech from Naoqi to perfrom the Human-Robot interaction. The dependency on the Qi library needs to be built and installed on Ubuntu 20.04.6.
+This project uses several Python libraries to connect to Pepper 2.9 and execute AL commands from LibQi. The main libraries used are Qi, OpenCV, Numpy, Pandas, and Wordcloud. We utlize ALMood, ALVideoDevice, ALTextToSpeech, and ALAnimatedSpeech from Naoqi to perfrom the Human-Robot interaction. The dependency on the Qi library needs to be built and installed on Ubuntu.
 
 
 ## Installation
@@ -14,8 +14,7 @@ pip install -r requirements.txt
 
 ```
 
-For the Qi library, please follow the instructions on the Qi PyPI page.
-https://pypi.org/project/qi/
+For the Qi library, please follow the instructions in Qi_Install_Guide.docx 
 
 
 ## Running
