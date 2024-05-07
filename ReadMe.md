@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ```
 
-For the Qi library, please follow the instructions in Qi_Install_Guide.docx 
+### For the Qi library, please follow the instructions in Qi_Install_Guide.docx 
 
 
 ## Running
