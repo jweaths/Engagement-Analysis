@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ```
 
-### For the Qi library, please follow the instructions in Qi_Install_Guide.docx 
+### Important: For the Qi library package and learning how to connect to Pepper using Qi methods, please refer to the instructions in Qi_Install_Guide.docx 
 
 
 ## Running
